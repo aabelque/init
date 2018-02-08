@@ -1,0 +1,17 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    06                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aabelque <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/02/02 21:41:47 by aabelque          #+#    #+#              #
+#    Updated: 2018/02/02 22:25:09 by aabelque         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Retourner a la racine avec la commande cd / puis aller dans le dossier etc/
+et ouvrir le ficher resolv.conf  ->/etc/ vim resolv.conf. Ici on voit bien 
+l'adresse IP du serveur DNS qu'on utilise. Dans le dossier etc/ faire un ls -l du fichier resolv.conf.
+On voit que c'est un lien symbolique et en tapant la commande "readlink resolv.conf" on retrouve le path du fichier
+->/var/run .
